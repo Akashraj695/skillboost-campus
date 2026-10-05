@@ -1,0 +1,5 @@
+document.addEventListener("DOMContentLoaded",()=>{
+ document.querySelectorAll("[data-confirm]").forEach(a=>{
+   a.addEventListener("click",e=>{if(!confirm(a.dataset.confirm))e.preventDefault();});
+ });
+});
